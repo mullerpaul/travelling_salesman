@@ -45,4 +45,13 @@ SELECT pl.path_id,
  GROUP BY pl.path_id
  ORDER BY 2;
 
+--- ALL patchs for 5 city computed in .067 sec!
+
+--- so will 8 city be solved in .067sec * 6 * 7 * 8 = 22.5 sec?
+--- and 10 city in 22.5s * 9 * 10 * 1min/60sec = 34min?
+
+-- assuming those times are close to accurate, our next steps will be:
+--   Try with 8 city with random data.
+--   Then 10 city with real data.  with real data, we'll want a way to 
+--   save the paths for later analysis and perhaps display them on a map!
  
